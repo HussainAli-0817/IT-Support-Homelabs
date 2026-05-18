@@ -31,14 +31,6 @@ For help desk and junior IAM roles, this project proves familiarity with the env
 - Basic GPO planning and policy-targeting awareness.
 - Professional documentation of an identity environment.
 
-## What This Project Does Not Prove Yet
+## Recruiter Takeaway
 
-This is a structure and documentation project. By itself, it does not fully prove ticket execution. The stronger proof belongs in the resolved ticket cases under `tickets/resolved/`, where before/after validation, user impact, approvals, and closure notes can be shown.
-
-## Next Improvements
-
-- Add a short diagram explaining where help desk users, standard users, service accounts, and disabled accounts belong.
-- Add sample tickets that reference this structure.
-- Add before/after evidence for user creation, group membership, and password reset workflows.
-- Add a GPO baseline case showing which OUs receive which policies.
-
+This project shows that I understand the structure behind Active Directory support work: where users, computers, servers, groups, and policies live before a technician starts troubleshooting or making account changes.

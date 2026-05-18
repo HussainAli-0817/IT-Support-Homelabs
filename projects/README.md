@@ -1,6 +1,6 @@
 # Project Case Studies
 
-These projects were consolidated from earlier GitHub repositories and rewritten to support one job target: help desk, desktop support, junior IAM, Entra ID, and Microsoft 365 support.
+These projects show hands-on practice for help desk, desktop support, junior IAM, Entra ID, and Microsoft 365 support roles.
 
 ## Recommended Recruiter Reading Order
 
@@ -10,9 +10,8 @@ These projects were consolidated from earlier GitHub repositories and rewritten 
 | 2 | [Active Directory Regional Structure](ad-asia-region/) | OU structure, users, groups, computers, servers |
 | 3 | [Network And Cloud Support Foundations](network-cloud-foundations/) | Connectivity troubleshooting, AWS VPC basics, firewall concepts |
 
-## How These Fit Together
+## Portfolio Story
 
 The AD structure project shows the environment. The Help Desk AD project shows common account tasks. The Network and Cloud project shows troubleshooting awareness for connectivity issues that often appear in help desk queues.
 
-The next and most important step is to add completed support cases under `tickets/resolved/`. Those resolved tickets should become the strongest proof in this portfolio.
-
+Future additions will focus on completed support cases with before/after evidence.

@@ -35,10 +35,6 @@ Help desk and junior support roles often touch network symptoms even when they a
 | Website unreachable | HTTP rule, route table, public IP, service status |
 | VPN or cloud access issue | Network path, identity group, conditional access, device state |
 
-## What To Add Next
+## Recruiter Takeaway
 
-- Add a ticket-style case: "user cannot reach internal web app."
-- Include commands used, such as `ipconfig`, `ping`, `tracert`, `Test-NetConnection`, or AWS console checks.
-- Document root cause and resolution.
-- Keep cloud IDs sanitized and avoid exposing live public DNS names.
-
+This project shows foundational network and cloud troubleshooting awareness, especially around connectivity, routing, firewall rules, public/private access, and cloud network boundaries.

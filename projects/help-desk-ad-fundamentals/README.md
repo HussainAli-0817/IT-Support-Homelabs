@@ -30,13 +30,6 @@ Help desk teams need technicians who can make common account changes safely and 
 | Password reset | Reset password, require password change, document validation |
 | Access request | Understand user and group organization before modifying access |
 
-## What To Add Next
+## Recruiter Takeaway
 
-To make this project stronger for recruiters, add one completed ticket for each workflow:
-
-1. Password reset and account unlock.
-2. New hire onboarding.
-3. Group access request.
-
-Each ticket should include intake notes, approval or identity verification, before/after evidence, validation, and a user-facing closure note.
-
+This project shows direct practice with common Active Directory help desk tasks: creating users, organizing accounts, and performing a secure password reset workflow.
