@@ -1,17 +1,14 @@
-# Project Case Studies
+# Projects
 
-These projects show hands-on practice for help desk, desktop support, junior IAM, Entra ID, and Microsoft 365 support roles.
+These are the finished project writeups I have so far.
 
-## Recommended Recruiter Reading Order
+## Current Projects
 
-| Order | Project | Best Signal |
-| --- | --- | --- |
-| 1 | [Help Desk Active Directory Fundamentals](help-desk-ad-fundamentals/) | User creation, password reset, AD help desk basics |
-| 2 | [Active Directory Regional Structure](ad-asia-region/) | OU structure, users, groups, computers, servers |
-| 3 | [Network And Cloud Support Foundations](network-cloud-foundations/) | Connectivity troubleshooting, AWS VPC basics, firewall concepts |
+| Project | What it shows |
+| --- | --- |
+| [Help Desk Active Directory Fundamentals](help-desk-ad-fundamentals/) | Basic AD help desk tasks |
+| [Active Directory Regional Structure](ad-asia-region/) | AD organization and structure |
+| [Network And Cloud Support Foundations](network-cloud-foundations/) | Networking and AWS VPC basics |
 
-## Portfolio Story
+I am keeping this section focused on completed work. As I finish more ticket-style labs, I will add them here.
 
-The AD structure project shows the environment. The Help Desk AD project shows common account tasks. The Network and Cloud project shows troubleshooting awareness for connectivity issues that often appear in help desk queues.
-
-Future additions will focus on completed support cases with before/after evidence.

@@ -1,35 +1,24 @@
-# Project Case: Help Desk Active Directory Fundamentals
+# Help Desk Active Directory Fundamentals
 
-## Purpose
+This project is focused on basic Active Directory tasks that come up in help desk work.
 
-This project shows entry-level Active Directory support tasks that map directly to help desk tickets: creating a user, placing lab objects in an OU, managing a basic security group, and resetting a password securely.
+## What I Practiced
 
-## Why It Matters For Hiring
+- Creating a user account.
+- Organizing users in a lab OU.
+- Creating and viewing a security group.
+- Resetting a user password.
+- Setting the option for the user to change password at next sign-in.
 
-Help desk teams need technicians who can make common account changes safely and document them clearly. This project is useful because it focuses on the tasks that show up in real queues:
+## Screenshots
 
-- New user creation.
-- Password reset.
-- User must change password at next sign-in.
-- Basic OU organization.
-- Security group awareness.
-
-## Evidence
-
-| Evidence | File |
+| Screenshot | What it shows |
 | --- | --- |
-| HelpDesk lab OU and group structure | [HelpDesk-OU-Management.png](assets/HelpDesk-OU-Management.png) |
-| User creation workflow | [User-Creation-Demonstration.png](assets/User-Creation-Demonstration.png) |
-| Password reset workflow | [Password-Reset-Demonstration.png](assets/Password-Reset-Demonstration.png) |
+| [HelpDesk-OU-Management.png](assets/HelpDesk-OU-Management.png) | HelpDesk lab OU with users and a group |
+| [User-Creation-Demonstration.png](assets/User-Creation-Demonstration.png) | New user creation window |
+| [Password-Reset-Demonstration.png](assets/Password-Reset-Demonstration.png) | Password reset workflow |
 
-## Ticket Mapping
+## What I Learned
 
-| Ticket Type | Skills Shown |
-| --- | --- |
-| New hire onboarding | Create AD user, place in OU, set temporary password |
-| Password reset | Reset password, require password change, document validation |
-| Access request | Understand user and group organization before modifying access |
+This gave me practice with the type of account work help desk technicians handle often. My next step is to turn this into a more complete ticket example with before and after notes.
 
-## Recruiter Takeaway
-
-This project shows direct practice with common Active Directory help desk tasks: creating users, organizing accounts, and performing a secure password reset workflow.

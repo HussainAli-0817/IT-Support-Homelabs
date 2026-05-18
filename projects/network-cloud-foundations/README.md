@@ -1,40 +1,30 @@
-# Project Case: Network And Cloud Support Foundations
+# Network And Cloud Support Foundations
 
-## Purpose
+This project is from my networking and AWS practice. I wanted to get more comfortable with basic connectivity troubleshooting and how cloud networking pieces fit together.
 
-This project consolidates earlier networking and AWS learning into one recruiter-friendly support case. It is not the main IAM portfolio piece, but it supports help desk readiness by showing TCP/IP, routing, firewall/security group, and cloud networking awareness.
+## What I Practiced
 
-## Role Relevance
+- DHCP and static IP basics.
+- Testing connectivity with ping.
+- Troubleshooting an IP conflict.
+- Creating an AWS VPC.
+- Working with public and private subnets.
+- Looking at route tables, internet gateways, security groups, and NACLs.
 
-Help desk and junior support roles often touch network symptoms even when they are not network engineering roles. This project shows practice with:
+## Screenshots
 
-- DHCP and static IP troubleshooting.
-- IP conflict diagnosis.
-- Ping and connectivity testing.
-- AWS VPC, subnet, route table, internet gateway, security group, and NACL concepts.
-- Public versus private network paths.
-
-## Evidence
-
-| Area | Evidence |
+| Screenshot | What it shows |
 | --- | --- |
-| VPC creation | [Creating_VPC.png](assets/Creating_VPC.png) |
-| Subnets | [Subnets_panel.png](assets/Subnets_panel.png) |
-| Internet gateway | [Internet_Gateway_panel.png](assets/Internet_Gateway_panel.png) |
-| Route table | [Route2.png](assets/Route2.png) |
-| Public and private EC2 layout | [ec2instance-private&public.png](assets/ec2instance-private&public.png) |
-| Security groups | [NextWork_Security_Group.png](assets/NextWork_Security_Group.png) |
-| NACL rules | [InboundRule_NACL.png](assets/InboundRule_NACL.png), [Private-NACL.png](assets/Private-NACL.png) |
+| [Creating_VPC.png](assets/Creating_VPC.png) | VPC creation |
+| [Subnets_panel.png](assets/Subnets_panel.png) | Subnet setup |
+| [Internet_Gateway_panel.png](assets/Internet_Gateway_panel.png) | Internet gateway |
+| [Route2.png](assets/Route2.png) | Route table |
+| [ec2instance-private&public.png](assets/ec2instance-private&public.png) | Public and private EC2 layout |
+| [NextWork_Security_Group.png](assets/NextWork_Security_Group.png) | Security group setup |
+| [InboundRule_NACL.png](assets/InboundRule_NACL.png) | Inbound NACL rule |
+| [Private-NACL.png](assets/Private-NACL.png) | Private NACL setup |
 
-## Support Ticket Mapping
+## What I Learned
 
-| Ticket Scenario | Troubleshooting Focus |
-| --- | --- |
-| User cannot reach internal app | DNS, route, firewall, security group, endpoint status |
-| VM cannot ping another host | IP address, subnet, firewall, NACL, security group |
-| Website unreachable | HTTP rule, route table, public IP, service status |
-| VPN or cloud access issue | Network path, identity group, conditional access, device state |
+This helped me connect basic help desk troubleshooting with cloud/network concepts. A lot of user issues start as "I cannot connect," so I wanted more practice thinking through IPs, routes, firewall rules, and public versus private access.
 
-## Recruiter Takeaway
-
-This project shows foundational network and cloud troubleshooting awareness, especially around connectivity, routing, firewall rules, public/private access, and cloud network boundaries.

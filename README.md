@@ -1,44 +1,40 @@
-# Hussain Ali - Help Desk & IAM Portfolio
+# Hussain Ali - IT Support Homelab
 
-This repository is a proof-of-work portfolio for help desk, desktop support, junior IAM, Entra ID, and Microsoft 365 support roles.
+This repo is where I keep the finished parts of my IT support homelab. I am using it to show hands-on practice with Active Directory, help desk tasks, networking, AWS basics, PowerShell, Entra ID, and Microsoft 365 support.
 
-It is intentionally kept focused for recruiters: project evidence, screenshots, support-oriented scripts, and a current resume.
+I keep my practice notes and rough drafts outside of this repo. What is here is meant to be the cleaner version that someone can review quickly.
 
 ## Resume
 
-[Download Hussain Ali Resume](assets/resume/Hussain_Ali_Resume.pdf)
+[Download my resume](assets/resume/Hussain_Ali_Resume.pdf)
 
-## Portfolio Projects
+## Projects
 
-| Project | Skills Shown | Evidence |
-| --- | --- | --- |
-| [Help Desk Active Directory Fundamentals](projects/help-desk-ad-fundamentals/) | User creation, password reset, OU organization, AD help desk basics | ADUC screenshots and password reset workflow |
-| [Active Directory Regional Structure](projects/ad-asia-region/) | OU design, users, groups, computers, servers, AD organization | Regional AD structure screenshots |
-| [Network And Cloud Support Foundations](projects/network-cloud-foundations/) | TCP/IP troubleshooting, AWS VPC basics, security groups, NACLs, routing | AWS networking screenshots and support notes |
-
-## Support Scripts
-
-| Script | Purpose |
+| Project | What I practiced |
 | --- | --- |
-| [Get-AdUserTroubleshooting.ps1](scripts/powershell/ad/Get-AdUserTroubleshooting.ps1) | Read-only AD user troubleshooting check |
-| [Reset-AdLabPassword.ps1](scripts/powershell/ad/Reset-AdLabPassword.ps1) | Lab password reset and account unlock workflow |
-| [New-AdLabUser.ps1](scripts/powershell/ad/New-AdLabUser.ps1) | Lab user creation workflow |
-| [Connect-EntraGraph.ps1](scripts/powershell/entra/Connect-EntraGraph.ps1) | Microsoft Graph connection helper |
-| [Export-EntraUserInventory.ps1](scripts/powershell/entra/Export-EntraUserInventory.ps1) | Entra ID user inventory export |
+| [Help Desk Active Directory Fundamentals](projects/help-desk-ad-fundamentals/) | Creating users, organizing an OU, and resetting a password |
+| [Active Directory Regional Structure](projects/ad-asia-region/) | Building out an AD structure with users, groups, computers, and servers |
+| [Network And Cloud Support Foundations](projects/network-cloud-foundations/) | Basic network troubleshooting and AWS VPC concepts |
 
-## Current Focus
+## PowerShell Scripts
 
-This portfolio currently shows foundational Active Directory, help desk, networking, cloud, and PowerShell work.
+| Script | What it is for |
+| --- | --- |
+| [Get-AdUserTroubleshooting.ps1](scripts/powershell/ad/Get-AdUserTroubleshooting.ps1) | Checking basic AD user details for troubleshooting |
+| [Reset-AdLabPassword.ps1](scripts/powershell/ad/Reset-AdLabPassword.ps1) | Practicing password reset and unlock steps in a lab |
+| [New-AdLabUser.ps1](scripts/powershell/ad/New-AdLabUser.ps1) | Practicing AD user creation in a lab |
+| [Connect-EntraGraph.ps1](scripts/powershell/entra/Connect-EntraGraph.ps1) | Connecting to Microsoft Graph PowerShell |
+| [Export-EntraUserInventory.ps1](scripts/powershell/entra/Export-EntraUserInventory.ps1) | Exporting basic Entra ID user inventory |
 
-The next public additions will be completed support case studies with before/after evidence, such as:
+## What I Am Building Toward
+
+My next goal is to add finished support examples, not just lab screenshots. The examples I want to build next are:
 
 - Password reset and account unlock
 - New hire onboarding
-- Access request with approval
+- Group access request
 - Offboarding
 - MFA phone change
 - Microsoft 365 license issue
 - Shared folder, VPN, DNS, or GPO troubleshooting
-
-Only polished proof will be added here. Planning notes and practice work are kept outside the public repo.
 
