@@ -1,4 +1,4 @@
-# Password Reset And Account Unlock
+# Password Reset And First Login Validation
 
 This project is from my Active Directory help desk lab. I practiced a basic password reset workflow for a domain user and documented the before and after steps.
 
@@ -22,6 +22,7 @@ Client used for testing:
 
 - Opening a user account in Active Directory Users and Computers.
 - Checking the user's account tab before making changes.
+- Confirming the account was not locked before resetting the password.
 - Resetting a user's password.
 - Requiring password change at next logon.
 - Logging into the domain client as the user.
@@ -69,3 +70,4 @@ Password reset completed for Ada Lovelace. User was required to change the tempo
 
 This helped me practice the normal help desk flow for a password reset: check the account first, make the change, have the user test login, and verify the final account state.
 
+I also learned that a password reset is not the same thing as an account unlock. The reset window showed Ada's account was already unlocked, so this project focuses on password reset and login validation only. I will handle a real lockout/unlock scenario separately when I build that workflow.
