@@ -13,9 +13,6 @@ I keep my practice notes and rough drafts outside of this repo. What is here is 
 | Project | What I practiced |
 | --- | --- |
 | [Active Directory Help Desk Lab Foundation](projects/ad-helpdesk-lab-foundation/) | Building a fresh AD domain, joining a Windows 10 client, creating users, and testing group access |
-| [Help Desk Active Directory Fundamentals](projects/help-desk-ad-fundamentals/) | Creating users, organizing an OU, and resetting a password |
-| [Active Directory Regional Structure](projects/ad-asia-region/) | Building out an AD structure with users, groups, computers, and servers |
-| [Network And Cloud Support Foundations](projects/network-cloud-foundations/) | Basic network troubleshooting and AWS VPC concepts |
 
 ## PowerShell Scripts
 
