@@ -13,12 +13,12 @@ I keep my practice notes and rough drafts outside of this repo. What is here is 
 | Project | What I practiced |
 | --- | --- |
 | [Active Directory Help Desk Lab Foundation](projects/ad-helpdesk-lab-foundation/) | Building a fresh AD domain, joining a Windows 10 client, creating users, and testing group access |
+| [Password Reset And Account Unlock](projects/password-reset-account-unlock/) | Resetting a domain user's password, requiring password change, and testing login |
 
 ## What I Am Building Toward
 
 My next goal is to add finished support examples, not just lab screenshots. The examples I want to build next are:
 
-- Password reset and account unlock
 - New hire onboarding
 - Group access request
 - Offboarding
