@@ -13,17 +13,14 @@ I keep my practice notes and rough drafts outside of this repo. What is here is 
 | Project | What I practiced |
 | --- | --- |
 | [Active Directory Help Desk Lab Foundation](projects/ad-helpdesk-lab-foundation/) | Building a fresh AD domain, joining a Windows 10 client, creating users, and testing group access |
-| [Password Reset And First Login Validation](projects/password-reset-first-login-validation/) | Resetting a domain user's password, requiring password change, and testing login |
+| [Active Directory Support Workflows](projects/ad-support-workflows/) | Password reset, account unlock, group access, account status checks, ticket notes, and PowerShell validation |
 
 ## What I Am Building Toward
 
 My next goal is to add finished support examples, not just lab screenshots. The examples I want to build next are:
 
-- New hire onboarding
-- Account lockout and unlock
-- Group access request
-- Offboarding
-- MFA phone change
-- Microsoft 365 license issue
-- Azure / Entra ID user and group management
-- Shared folder, VPN, DNS, or GPO troubleshooting
+- basic AD account review
+- computer object and OU move checks
+- basic Group Policy support
+- Windows and network troubleshooting tickets
+- Microsoft 365, Entra ID, and Azure support basics
