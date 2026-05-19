@@ -15,9 +15,11 @@ I keep my practice notes and rough drafts outside of this repo. What is here is 
 | [Active Directory Help Desk Lab Foundation](projects/ad-helpdesk-lab-foundation/) | Building a fresh AD domain, joining a Windows 10 client, creating users, and testing group access |
 | [Active Directory Support Workflows](projects/ad-support-workflows/) | Password reset, account unlock, group access, account status checks, ticket notes, and PowerShell validation |
 
-## What I Am Building Toward
+## Current Focus
 
-My next goal is to add finished support examples, not just lab screenshots. The examples I want to build next are:
+I am currently building out my Active Directory support workflows before moving into Windows troubleshooting, networking, Microsoft 365, Entra ID, and Azure basics.
+
+The next areas I am working on are:
 
 - basic AD account review
 - computer object and OU move checks
