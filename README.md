@@ -17,12 +17,12 @@ I keep my practice notes and rough drafts outside of this repo. What is here is 
 
 ## Current Focus
 
-I am currently building out my Active Directory support workflows before moving into Windows troubleshooting, networking, Microsoft 365, Entra ID, and Azure basics.
+I finished the Active Directory lab foundation and AD support workflows. My next focus is Windows 10 troubleshooting, basic network troubleshooting, and help desk ticket documentation.
 
 The next areas I am working on are:
 
-- basic AD account review
-- computer object and OU move checks
-- basic Group Policy support
-- Windows and network troubleshooting tickets
+- Windows 10 troubleshooting tickets
+- basic network troubleshooting
+- realistic help desk ticket documentation
+- software and printer support labs
 - Microsoft 365, Entra ID, and Azure support basics
