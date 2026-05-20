@@ -20,6 +20,10 @@ The goal was to check the account first, make the correct change, validate the r
 | Account lockout + unlock | Set a lockout policy, triggered a lockout, confirmed it in ADUC, unlocked the account, and validated login |
 | Group access request | Checked group membership, added a user to a security group, and verified membership with PowerShell |
 | Disable + re-enable account | Disabled a test account, verified status with PowerShell, and restored the account |
+| Basic AD account review | Reviewed account status, group membership, and password metadata with ADUC and PowerShell |
+| Computer object + OU move check | Moved a computer object to the lab OU and verified the new path with PowerShell |
+| Basic AD PowerShell verification | Checked user status, group membership, and computer object DN with read-only PowerShell commands |
+| Basic Group Policy support | Created a custom GPO, linked it to the lab OU, set a policy, and validated the effect on the client |
 
 ## Workflow 1: Password Reset + First Login Validation
 
@@ -164,6 +168,139 @@ Close note: Account status was tested and restored. Grace Hopper's account is en
 
 Escalation if repeated or unresolved: If a disabled account still appears able to sign in, I would check for cached credentials, existing sessions, domain controller connectivity, and whether the account change was fully applied.
 
+## Workflow 5: Basic AD Account Review
+
+**What I practiced**
+
+- Reviewed Grace Hopper's account identity fields in ADUC.
+- Checked the account status and group membership.
+- Verified account state and password metadata with PowerShell.
+
+**Evidence**
+
+| Step | Screenshot |
+| --- | --- |
+| ADUC account tab review | [01-aduc-account-tab-review.png](assets/basic-account-review/01-aduc-account-tab-review.png) |
+| ADUC member-of review | [02-aduc-memberof-review.png](assets/basic-account-review/02-aduc-memberof-review.png) |
+| PowerShell account review | [03-powershell-account-review.png](assets/basic-account-review/03-powershell-account-review.png) |
+
+**Ticket note**
+
+Issue: Performed a basic AD account review for Grace Hopper in the homelab.
+
+Checked: Reviewed account identity fields, account status, and group membership in ADUC. Verified account state and password metadata with PowerShell.
+
+Action: No account changes were made. This was a read-only validation check.
+
+Validation: Confirmed account identity format, current enabled/lockout state, password last set value, and group membership output.
+
+Close note: Basic AD account review completed and current account state documented.
+
+Escalation if repeated or unresolved: If sign-in or access issues are reported later, I would re-check account status, group membership, OU placement, and policy application.
+
+## Workflow 6: Computer Object + OU Move Check
+
+**What I practiced**
+
+- Found the `WIN10-CLIENT01` computer object in the default Computers container.
+- Moved it to the lab `HomeLab > Computers` OU.
+- Refreshed policy on the client with `gpupdate /force`.
+- Verified the computer object path with PowerShell.
+
+**Evidence**
+
+| Step | Screenshot |
+| --- | --- |
+| Computer object before move | [01-computer-object-before-move.png](assets/computer-object-ou-move-check/01-computer-object-before-move.png) |
+| Computer object after move | [02-computer-object-after-move.png](assets/computer-object-ou-move-check/02-computer-object-after-move.png) |
+| PowerShell OU validation | [03-powershell-ou-validation.png](assets/computer-object-ou-move-check/03-powershell-ou-validation.png) |
+| Policy refresh after move | [04-gpupdate-after-ou-move.png](assets/computer-object-ou-move-check/04-gpupdate-after-ou-move.png) |
+
+**Ticket note**
+
+Issue: `WIN10-CLIENT01` computer object needed to be moved from the default Computers container to the lab Computers OU.
+
+Checked: Confirmed `WIN10-CLIENT01` was located under `homelab.local > Computers` before the change.
+
+Action: Moved `WIN10-CLIENT01` to `homelab.local > HomeLab > Computers` in ADUC and refreshed policy on the client with `gpupdate /force`.
+
+Validation: Confirmed the object appeared in `HomeLab > Computers` and was no longer in the default Computers container. Verified the OU path with PowerShell.
+
+Close note: Computer object OU placement was corrected and validated.
+
+Escalation if repeated or unresolved: If computer objects keep landing in the wrong location, I would review the join workflow, delegated rights, and any automation or policy affecting computer object placement.
+
+## Workflow 7: Basic AD PowerShell Verification
+
+**What I practiced**
+
+- Checked account status with a read-only AD user query.
+- Checked group membership with PowerShell.
+- Verified the computer object path with PowerShell.
+
+**PowerShell commands**
+
+```powershell
+Get-ADUser grace.hopper -Properties Enabled,LockedOut,PasswordLastSet | Select-Object Name,SamAccountName,Enabled,LockedOut,PasswordLastSet
+Get-ADPrincipalGroupMembership grace.hopper | Select-Object Name
+Get-ADComputer WIN10-CLIENT01 -Properties DistinguishedName | Select-Object Name,DistinguishedName
+```
+
+**Evidence**
+
+| Step | Screenshot |
+| --- | --- |
+| User account status | [01-user-account-status.png](assets/basic-ad-powershell-verification/01-user-account-status.png) |
+| User group membership | [02-user-group-membership.png](assets/basic-ad-powershell-verification/02-user-group-membership.png) |
+| Computer object DN | [03-computer-object-dn.png](assets/basic-ad-powershell-verification/03-computer-object-dn.png) |
+
+**Ticket note**
+
+Issue: Performed a basic AD PowerShell verification check for Grace Hopper and `WIN10-CLIENT01`.
+
+Checked: Reviewed user status, user group membership, and computer object path with PowerShell.
+
+Action: No changes were made. This was a read-only verification check.
+
+Validation: Confirmed Grace Hopper's account status, current group membership, and `WIN10-CLIENT01` computer object distinguished name in the lab OU.
+
+Close note: Basic AD PowerShell verification completed and documented.
+
+Escalation if repeated or unresolved: If account or computer object issues are reported later, I would re-check account status, group membership, OU placement, and policy application.
+
+## Workflow 8: Basic Group Policy Support
+
+**What I practiced**
+
+- Reviewed the default domain policy scope.
+- Created and linked a custom GPO to the `HomeLab` OU.
+- Set a simple user restriction policy.
+- Refreshed policy on the client and confirmed the restriction applied.
+
+**Evidence**
+
+| Step | Screenshot |
+| --- | --- |
+| Default domain policy scope | [01-default-domain-policy-scope.png](assets/basic-group-policy-support/01-default-domain-policy-scope.png) |
+| Custom GPO scope | [02-custom-gpo-scope.png](assets/basic-group-policy-support/02-custom-gpo-scope.png) |
+| Policy enabled | [03-gpo-control-panel-policy-enabled.png](assets/basic-group-policy-support/03-gpo-control-panel-policy-enabled.png) |
+| Policy refresh on client | [04-gpupdate-after-gpo-enable.png](assets/basic-group-policy-support/04-gpupdate-after-gpo-enable.png) |
+| Client restriction message | [05-control-panel-blocked.png](assets/basic-group-policy-support/05-control-panel-blocked.png) |
+
+**Ticket note**
+
+Issue: Set up and tested a basic Group Policy restriction in the lab.
+
+Checked: Reviewed the default domain policy scope, created a custom GPO linked to the `HomeLab` OU, and verified the policy location and filters.
+
+Action: Enabled a user policy to restrict access to Control Panel and PC settings, then refreshed policy on `WIN10-CLIENT01` with `gpupdate /force`.
+
+Validation: Confirmed the policy update completed successfully and the client showed a restrictions message when Control Panel access was tested.
+
+Close note: Basic GPO creation, linking, and client-side validation were completed successfully.
+
+Escalation if repeated or unresolved: If the policy does not apply as expected, check the GPO link, security filtering, user logon session, and whether the client refreshed policy from the domain.
+
 ## What I Learned
 
 - A password reset is different from an account unlock.
@@ -171,12 +308,3 @@ Escalation if repeated or unresolved: If a disabled account still appears able t
 - PowerShell is useful for quick AD verification.
 - ADUC changes need to be applied before validation.
 - Account status testing can be affected by cached credentials or existing sessions.
-
-## Still Building
-
-This AD support project is still being expanded. The next workflows I plan to add are:
-
-- basic AD account review
-- computer object and OU move check
-- basic AD PowerShell verification
-- basic Group Policy support
