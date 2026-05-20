@@ -16,12 +16,12 @@ The goal was to check the account first, make the correct change, validate the r
 
 | Workflow | What I practiced |
 | --- | --- |
-| [Password reset + first login validation](#workflow-1-password-reset--first-login-validation) | Reset a user password, required password change at next logon, and confirmed successful login |
-| [Account lockout + unlock](#workflow-2-account-lockout--unlock) | Set a lockout policy, triggered a lockout, confirmed it in ADUC, unlocked the account, and validated login |
+| [Password reset + first login validation](#workflow-1-password-reset-first-login-validation) | Reset a user password, required password change at next logon, and confirmed successful login |
+| [Account lockout + unlock](#workflow-2-account-lockout-unlock) | Set a lockout policy, triggered a lockout, confirmed it in ADUC, unlocked the account, and validated login |
 | [Group access request](#workflow-3-group-access-request) | Checked group membership, added a user to a security group, and verified membership with PowerShell |
-| [Disable + re-enable account](#workflow-4-disable--re-enable-account) | Disabled a test account, verified status with PowerShell, and restored the account |
+| [Disable + re-enable account](#workflow-4-disable-re-enable-account) | Disabled a test account, verified status with PowerShell, and restored the account |
 | [Basic AD account review](#workflow-5-basic-ad-account-review) | Reviewed account status, group membership, and password metadata with ADUC and PowerShell |
-| [Computer object + OU move check](#workflow-6-computer-object--ou-move-check) | Moved a computer object to the lab OU and verified the new path with PowerShell |
+| [Computer object + OU move check](#workflow-6-computer-object-ou-move-check) | Moved a computer object to the lab OU and verified the new path with PowerShell |
 | [Basic AD PowerShell verification](#workflow-7-basic-ad-powershell-verification) | Checked user status, group membership, and computer object DN with read-only PowerShell commands |
 | [Basic Group Policy support](#workflow-8-basic-group-policy-support) | Created a custom GPO, linked it to the lab OU, set a policy, and validated the effect on the client |
 
