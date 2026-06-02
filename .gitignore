@@ -1,4 +1,6 @@
 # Local output and exported evidence
+.agents/
+skills-lock.json
 *.log
 *.tmp
 *.bak
