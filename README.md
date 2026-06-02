@@ -17,11 +17,12 @@ I keep my practice notes and rough drafts outside of this repo. What is here is 
 
 ## Current Focus
 
-I finished the Active Directory lab foundation and AD support workflows. My next focus is Windows 10 troubleshooting, basic network troubleshooting, and help desk ticket documentation.
+I finished the Active Directory lab foundation and AD support workflows. My next focus is setting up a basic ticketing workflow, then using it for Windows client troubleshooting, basic network troubleshooting, and realistic help desk documentation.
 
 The next areas I am working on are:
 
-- Windows 10 troubleshooting tickets
+- ticketing system setup
+- Windows client troubleshooting tickets
 - basic network troubleshooting
 - realistic help desk ticket documentation
 - software and printer support labs
