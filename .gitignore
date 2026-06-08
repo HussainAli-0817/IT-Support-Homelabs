@@ -1,5 +1,6 @@
 # Local output and exported evidence
 .agents/
+.codex/
 skills-lock.json
 *.log
 *.tmp
