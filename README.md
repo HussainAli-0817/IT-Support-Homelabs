@@ -1,12 +1,12 @@
 # Hussain Ali - IT Support Homelab
 
-This repo is where I keep the finished parts of my IT support homelab. I am using it to show hands-on practice with Active Directory, help desk tasks, Windows support, Azure, Entra ID, and Microsoft 365 support.
+This repo is where I keep the finished parts of my IT support homelab. I am using it to show hands-on practice with Active Directory, help desk tasks, Windows support, and ticketing.
 
 I keep my practice notes and rough drafts outside of this repo. What is here is meant to be the cleaner version that someone can review quickly.
 
 ## Resume
 
-[Download my resume](assets/resume/Hussain_Ali_Resume.pdf)
+[Download my resume](assets/resume/Hussain_Ali_Resume_2026.pdf)
 
 ## Projects
 
