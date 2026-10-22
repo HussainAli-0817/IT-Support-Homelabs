@@ -47,8 +47,6 @@ The first two examples show completed account work tied to my AD lab. The other 
 | Help topics created | [Help topics](assets/00-setup/02-help-topics.png) |
 | Twelve test requests submitted | [Customer portal queue](assets/00-setup/00-all-requests.png) |
 | Completed account request | [Password reset](tickets/01-password-reset.md) |
-| Windows client network check | [Network ticket](tickets/04-network-issue.md#evidence) |
-| AD group checked for the file-access request | [DC01 membership check](tickets/06-file-access.md#evidence) |
 | Approval and security follow-up examples | [Software request](tickets/07-software-request.md) · [Suspicious email](tickets/12-suspicious-email.md) |
 
 Each ticket page has a short screenshot trail showing the request, assignment, notes, reply, and test email. The two completed account tickets also show validation and their final status.

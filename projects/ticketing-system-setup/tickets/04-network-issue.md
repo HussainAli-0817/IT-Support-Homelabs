@@ -10,10 +10,6 @@ Triage: Check the connection, IP settings, gateway, and name lookup. Compare wit
 
 Next step: Check the connection, IP settings, gateway, and internal name lookup. Compare DNS settings with a working computer. If the DNS setting is wrong, restore the approved setting and check the intranet again.
 
-## VM check
-
-On WIN10-CLIENT01, the network flyout showed `homelab.local` and “No Internet.” That confirms the visible network status only; I haven't confirmed whether an internal intranet page is reachable.
-
 Customer reply: Please try the intranet again and let support know if any other internal pages fail to open. Include the error message if it still doesn't work.
 
 ## Evidence
@@ -26,7 +22,6 @@ Customer reply: Please try the intranet again and let support know if any other 
 | Work note saved | [06-work-note.png](../assets/04-network-issue/06-work-note.png) |
 | Customer reply posted | [07-customer-reply.png](../assets/04-network-issue/07-customer-reply.png) |
 | Test email received in Mailpit | [09-test-email-received.png](../assets/04-network-issue/09-test-email-received.png) |
-| Current network status on WIN10-CLIENT01 | [Windows network panel](../assets/04-network-issue/10-win10-domain-network.jpg) |
 
 ## Status
 
