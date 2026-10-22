@@ -1,63 +1,59 @@
 # Ticketing System Setup
 
-This project is from my help desk homelab. I set up a basic Jira Service Management space, created a password reset request type, submitted a test request through the customer portal, worked the ticket as an agent, and resolved it with notes.
+This project is from my help desk homelab. I set up osTicket locally, added help topics for common requests, and submitted 12 test requests through the customer portal. I used example customers and common help desk requests.
 
-The goal was to practice the ticket lifecycle from both sides: the requester submitting the issue and the support agent handling the work.
+The goal was to practice the ticket lifecycle from both sides: the requester submitting an issue and the support agent handling the follow-up.
+
+The password-reset, account-unlock, and file-access tickets connect to my Active Directory lab work. The other requests show how I document the next step when a requester, approver, or security team still needs to act.
 
 ## Tool Used
 
 | Tool | Purpose |
 | --- | --- |
-| Jira Service Management Free | Help desk ticketing system |
+| [osTicket 1.18.4](https://osticket.com/) | Local help desk ticketing system |
+| [Mailpit](https://mailpit.axllent.org/) | Local mailbox for checking ticket replies |
 
-## What I Built
+## What I Practiced
 
-- Created an IT service management space in Jira Service Management.
-- Reviewed the default request types.
-- Created a custom `Password Reset` request type.
-- Submitted a portal request as a test customer.
-- Opened the ticket in the agent view.
-- Assigned the ticket to myself.
-- Added internal triage and work notes.
-- Sent a customer-facing update.
-- Resolved the ticket.
+- Submitted example requests through the customer portal and opened them in the agent view.
+- Set priority, assigned tickets, and added internal notes.
+- Sent short replies to the requester and checked that they arrived in Mailpit.
+- Used ticket status to show completed work or who needs to act next.
 
-## Workflow Completed
+## Tickets
 
-| Step | What I practiced |
-| --- | --- |
-| Request submitted | Submitted a password reset request through the customer portal |
-| Agent view opened | Confirmed the ticket appeared in the agent workspace |
-| Ticket assigned | Assigned the ticket to myself as the support agent |
-| Internal triage note added | Documented the first checks before taking action |
-| Work note added | Documented the account checks, password reset, and validation |
-| Customer reply sent | Updated the requester in plain language |
-| Ticket resolved | Closed the request after the work was completed |
+The first two examples show completed account work tied to my AD lab. The other requests show follow-up while the requester, an approver, or Security still has a next step.
+
+| Ticket | Issue | Current status |
+| --- | --- | --- |
+| [#451725](tickets/01-password-reset.md) | I can't log in to my computer | Closed |
+| [#418085](tickets/02-account-unlock.md) | My account says it's locked out | Closed |
+| [#115202](tickets/03-slow-computer.md) | My computer is really slow after I sign in | Waiting for User |
+| [#351099](tickets/04-network-issue.md) | I can't open the company intranet | Waiting for User |
+| [#198184](tickets/05-printer-issue.md) | My document is stuck in the print queue | Waiting for User |
+| [#327797](tickets/06-file-access.md) | I need access to the team folder | Waiting for User |
+| [#667554](tickets/07-software-request.md) | Can I get a diagramming app installed? | Waiting for Approval |
+| [#437926](tickets/08-email-issue.md) | New emails show on the web but not in my email app | Waiting for User |
+| [#721945](tickets/09-vpn-issue.md) | My VPN stopped working after I changed my password | Waiting for User |
+| [#161600](tickets/10-new-hire.md) | Set up a standard account for a new starter | Waiting for Approval |
+| [#608037](tickets/11-leaver-request.md) | Remove access for a departing employee | Open |
+| [#162475](tickets/12-suspicious-email.md) | I received an email asking me to sign in | Waiting for Security |
 
 ## Evidence
 
-| Step | Screenshot |
+| Step | Screenshot or writeup |
 | --- | --- |
-| Jira dashboard landing page | [01-jira-dashboard-landing.png](assets/01-jira-dashboard-landing.png) |
-| Service project summary | [02-jira-service-project-summary.png](assets/02-jira-service-project-summary.png) |
-| Default request types | [03-jira-default-request-types.png](assets/03-jira-default-request-types.png) |
-| Password reset request type created | [04-password-reset-request-type-created.png](assets/04-password-reset-request-type-created.png) |
-| Password reset request submitted | [05-password-reset-request-submitted.png](assets/05-password-reset-request-submitted.png) |
-| Ticket opened in agent view | [06-agent-view-ticket-opened.png](assets/06-agent-view-ticket-opened.png) |
-| Ticket assigned to agent | [07-ticket-assigned-to-agent.png](assets/07-ticket-assigned-to-agent.png) |
-| Initial triage note added | [08-initial-triage-note-added.png](assets/08-initial-triage-note-added.png) |
-| Work performed note added | [09-work-performed-note-added.png](assets/09-work-performed-note-added.png) |
-| Customer reply sent | [10-customer-reply-password-reset.png](assets/10-customer-reply-password-reset.png) |
-| Ticket resolved | [11-ticket-resolved.png](assets/11-ticket-resolved.png) |
+| osTicket installed and running | [System settings](assets/00-setup/01-system-settings.png) |
+| Help topics created | [Help topics](assets/00-setup/02-help-topics.png) |
+| Twelve test requests submitted | [Customer portal queue](assets/00-setup/00-all-requests.png) |
+| Completed account request | [Password reset](tickets/01-password-reset.md) |
+| Approval and security follow-up examples | [Software request](tickets/07-software-request.md) · [Suspicious email](tickets/12-suspicious-email.md) |
+
+Each ticket page has a short screenshot trail showing the request, assignment, notes, reply, and test email. The two completed account tickets also show validation and their final status.
 
 ## What I Learned
 
-- The customer portal and agent view show different sides of the same support request.
-- Request types help users submit the right kind of issue.
-- Internal notes should be short, useful, and separate from customer replies.
-- Customer replies should be clear and not too technical.
-- A ticket is not complete until the work is documented and the status is resolved.
-
-## Status
-
-Completed first ticket lifecycle.
+- The customer portal and agent view show different sides of the same request.
+- Internal notes and customer replies have different purposes.
+- A short update should make the next step clear to the requester.
+- Some requests need approval or security review before support can finish them.

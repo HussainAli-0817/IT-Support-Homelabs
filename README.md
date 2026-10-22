@@ -14,11 +14,11 @@ I keep my practice notes and rough drafts outside of this repo. What is here is 
 | --- | --- |
 | [Active Directory Help Desk Lab Foundation](projects/ad-helpdesk-lab-foundation/) | Building a fresh AD domain, joining a Windows 10 client, creating users, and testing group access |
 | [Active Directory Support Workflows](projects/ad-support-workflows/) | Password reset, account unlock, group access, account status checks, ticket notes, and PowerShell validation |
-| [Ticketing System Setup](projects/ticketing-system-setup/) | Jira Service Management setup, request types, ticket intake, internal notes, customer replies, and ticket resolution |
+| [Ticketing System Setup](projects/ticketing-system-setup/) | osTicket setup, 12 test requests, internal notes, customer replies, and ticket follow-up |
 
 ## Current Focus
 
-I finished the Active Directory lab foundation, AD support workflows, and the first Jira ticket lifecycle. My next focus is using the ticketing workflow for Windows client troubleshooting, basic network troubleshooting, and realistic help desk documentation.
+I finished the Active Directory lab foundation, AD support workflows, and the osTicket lab with 12 test requests. My next focus is using the ticketing workflow for Windows client troubleshooting, basic network troubleshooting, and realistic help desk documentation.
 
 The next areas I am working on are:
 
