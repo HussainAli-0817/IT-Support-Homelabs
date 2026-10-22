@@ -27,6 +27,10 @@ Close note: Password reset completed and login confirmed.
 | Customer reply posted | [07-customer-reply.png](../assets/01-password-reset/07-customer-reply.png) |
 | Final status saved | [08-final-status.png](../assets/01-password-reset/08-final-status.png) |
 | Test email received in Mailpit | [09-test-email-received.png](../assets/01-password-reset/09-test-email-received.png) |
+| AD account before the reset | [Account review](../../ad-support-workflows/assets/password-reset-first-login-validation/01-ada-account-before-reset.png) |
+| AD account after the reset | [Account update](../../ad-support-workflows/assets/password-reset-first-login-validation/03-ada-account-after-reset.png) |
+| Sign-in after the reset | [Client sign-in](../../ad-support-workflows/assets/password-reset-first-login-validation/04-ada-login-after-password-reset.png) |
+| Account after sign-in | [Post-login check](../../ad-support-workflows/assets/password-reset-first-login-validation/05-ada-account-after-successful-login.png) |
 
 ## Status
 

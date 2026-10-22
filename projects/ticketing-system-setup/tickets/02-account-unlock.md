@@ -27,6 +27,10 @@ Close note: Account unlocked and login confirmed.
 | Customer reply posted | [07-customer-reply.png](../assets/02-account-unlock/07-customer-reply.png) |
 | Final status saved | [08-final-status.png](../assets/02-account-unlock/08-final-status.png) |
 | Test email received in Mailpit | [09-test-email-received.png](../assets/02-account-unlock/09-test-email-received.png) |
+| Client lockout message | [Client sign-in](../../ad-support-workflows/assets/account-lockout-unlock/02-client-locked-out-message.png) |
+| Account locked in ADUC | [Locked account](../../ad-support-workflows/assets/account-lockout-unlock/03-aduc-account-locked.png) |
+| Account unlocked in ADUC | [Unlocked account](../../ad-support-workflows/assets/account-lockout-unlock/04-aduc-account-unlocked.png) |
+| Sign-in after the unlock | [Client sign-in](../../ad-support-workflows/assets/account-lockout-unlock/05-login-validation-after-unlock.png) |
 
 ## Status
 
